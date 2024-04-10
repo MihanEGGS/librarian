@@ -7,17 +7,22 @@ piem. Zinot ka kurss ir 1.0831, padodot 10 eur, rezultāts būs 10.83 usd
 
 2 veiksmīgi scenāriji (happy path):
 
+Izmantojot 1 opciju grāmatu meklēšanai un padodot "Mobile Agents", rezultāts būs "1884777368 - Mobile Agents by William R. Cockayne and Michael Zyda, editors"
+Izmantojot 7 opciju jauno-ievadīto un veco datu saglābšanai, programma saglābā lietotāja pievienotās bibliotekai grāmats un apstājās
 
 
-5 izmantošanas scenāriji (use-case):
+4 izmantošanas scenāriji (use-case):
 
+Izmantojot 4 opciju grāmatu pievienošanai un padodot datus (Guts, 3487, 555, GRZEGORZ BZENSCHINCIKEVICH, 2000-11-19, UNPRONOUNCABLE) secīgā secībā, pēc programmas pieprasījuma ("Ievadiet grāmatas nosaukumu", "Ievadiet grāmatas ISBN", "Ievadiet lappušu skaitu", "Ievadiet" authors(coma-separated)", ''Enter publish date'', "Enter descpription") , rezultāts būs "Grāmata pievienota veiksmīgi", kas nozīmē, ka grāmata tika veiksmīgi pievienota grāmatu sarakstam.
+Izmantojot 1 opciju grāmatu meklēšanai un padodot "gUTS", rezultāts būs "3847 - Guts by GRZEGORZ BZENSCHINCIKEVICH"
+Izmantojot 3 opciju  10 īsāko grāmatu paradīšanai, iepriekš izmantojot 4 opciju grāmatu pievienošonai un ievadot ("The Anarchist Cookbook", "0464076994", 250, "William Powell", "1971-01-15", "Bananaz"), kopā ar citām īsākām grāmatām, 7-tā pozicijā paradīsies jaunievadītā grāmata "The Anarchist Cookbook"
+Izmantojot 1 opciju grāmatu meklēšanai un padodot "The a", rezultāts būs "0464076994 - The Anarchist Cookbook by William Powell"
 
+4 robežas scenāriji (edge-case):
 
-
-
-
-5 robežas scenāriji (edge-case):
-
-
+Opciju izvēlēšās stadijā, ievadot 8, rezultāts būs "Invalid choice. Please enter a number from 1 to 7."
+Izmantojot 6 opciju grāmātu marķēšnani kā brīvo un padodot 54545, rezultāts būs "Book with ISBN '54545' not found in the library."
+Izmantojot 4 opciju grāmatu pievienošanai un padodot datus (1,1,1,1,1,1), grāmato veiskmīgi pievienosies grāmatu sarakstam, jo programmai trūkst validācija
+Izmantojot 1 opciju grāmatu meklēšanai un padodt datus "Wheeler Dealers", rezultāts būs "No matching books found"
 
 
